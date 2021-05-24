@@ -15,7 +15,6 @@ import imageio
 import base64
 
 
-
 def embed_mp4(filename):
 	  """Embeds an mp4 file in the notebook."""
 	  video = open(filename,'rb').read()

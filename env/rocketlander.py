@@ -125,7 +125,7 @@ class ContactDetector(contactListener):
 class RocketLander(gym.Env):
     metadata = {"render.modes": ["human", "rgb_array"], "video.frames_per_second": FPS}
 
-    def __init__(self):
+    def __init__(self, continuous=CONTINUOUS):
         self._seed()
         self.viewer = None
         self.episode_number = 0
@@ -136,6 +136,7 @@ class RocketLander(gym.Env):
         self.engine = None
         self.ship = None
         self.legs = []
+        self.continuous = continuous
         
         
         high = np.array([1, 1, 1, 1, 1, 1, 1, np.inf, np.inf, np.inf], dtype=np.float32)
@@ -146,7 +147,7 @@ class RocketLander(gym.Env):
 
         self.observation_space = spaces.Box(low, high, dtype=np.float32)
 
-        if CONTINUOUS:
+        if self.continuous:
             self.action_space = spaces.Box(-1.0, +1.0, (3,), dtype=np.float32)
         elif EASY_CONTROL:
             self.action_space = spaces.Discrete(4)
@@ -359,7 +360,7 @@ class RocketLander(gym.Env):
             self.legs + [self.water] + [self.ship] + self.containers + [self.lander]
         )
 
-        if CONTINUOUS:
+        if self.continuous:
             return self.step([0, 0, 0])[0]
         elif EASY_CONTROL:
             return self.step(3)[0]
@@ -370,7 +371,7 @@ class RocketLander(gym.Env):
 
         self.force_dir = 0
 
-        if CONTINUOUS:
+        if self.continuous:
             np.clip(action, -1, 1)
             self.gimbal += action[0] * 0.15 / FPS
             self.throttle += action[1] * 0.5 / FPS
