@@ -56,26 +56,26 @@ To take a look at the tuned PID controllers at work run `python3 testrun.py`
 
 ```bash
 .
-├── main.py   								      # main python file
-├── evaluate.py    							    # evaluate trained agent
-├── testrun.py      						    # use PID controllers
+├── main.py        # main python file
+├── evaluate.py    # evaluate trained agent
+├── testrun.py     # use PID controllers
 ├── README.md
 ├── LICENSE
-├── imgs                            # image folder for the readme
+├── imgs           # image folder for the readme
 │	├── failure.gif
 │	├── success.gif
 │	├── still1.png
 │	├── still2.png
 │	└── still3.png
-├── env                           	# modified env from embersarc
+├── env            # modified env from embersarc
 │	└── rocketlander.py
-├── util                           	# utilities
+├── util           # utilities
 │	├── agent.py
 │	├── metrics.py
 │	├── neuralnet.py
 │	├── pid.py
 │	└── visualization.py
-└── checkpoints                     # checkpoints/logs
+└── checkpoints    # checkpoints/logs
 	└── YOUR-CHECKPOINTS
 
 
