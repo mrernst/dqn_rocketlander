@@ -1,9 +1,9 @@
 # Deep Q-Learning Rocketlander
 
 <p align="center">
-  <img src="https://github.com/mrernst/daisyworld/blob/main/imgs/rocket1.png" width="175">
-  <img src="https://github.com/mrernst/daisyworld/blob/main/imgs/rocket2.png" width="175">
-  <img src="https://github.com/mrernst/daisyworld/blob/main/imgs/rocket3.png" width="175">
+  <img src="https://github.com/mrernst/dqn_rocketlander/blob/main/imgs/rocket1.png" width="175">
+  <img src="https://github.com/mrernst/dqn_rocketlander/blob/main/imgs/rocket2.png" width="175">
+  <img src="https://github.com/mrernst/dqn_rocketlander/blob/main/imgs/rocket3.png" width="175">
   
 DQN Rocketlander was a 1-week mini-project work during the summer semester 2019 course reinforcement learning. It is an implementation of deep double Q Learning with experience replay to tackle autonomous rocket landing of a first stage on a bark.
 
@@ -101,8 +101,8 @@ There's some additional experiments included with traditional PID controllers. I
 
 ###### 750 episodes
 <p align="center">
-<img src="https://github.com/mrernst/DQN_rocketlander/blob/main/imgs/failure.gif" width="175">
+<img src="https://github.com/mrernst/dqn_rocketlander/blob/main/imgs/failure.gif" width="175">
 
 ###### 3700 episodes
 <p align="center">
-<img src="https://github.com/mrernst/DQN_rocketlander/blob/main/imgs/success.gif" width="175">
+<img src="https://github.com/mrernst/dqn_rocketlander/blob/main/imgs/success.gif" width="175">
