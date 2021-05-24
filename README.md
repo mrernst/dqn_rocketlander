@@ -59,7 +59,7 @@ To take a look at the tuned PID controllers at work run `python3 testrun.py`
 ├── main.py   								      # main python file
 ├── evaluate.py    							    # evaluate trained agent
 ├── testrun.py      						    # use PID controllers
-├── README.md                       
+├── README.md
 ├── LICENSE
 ├── imgs                            # image folder for the readme
 │	├── failure.gif
@@ -100,8 +100,8 @@ There's some additional experiments included with traditional PID controllers. I
 
 ###### 750 episodes
 <p align="center">
-<img src="https://github.com/mrernst/dqn_rocketlander/blob/main/imgs/failure.gif" width="175">
+<img src="https://github.com/mrernst/dqn_rocketlander/blob/main/imgs/failure.gif" width="320">
 
 ###### 3700 episodes
 <p align="center">
-<img src="https://github.com/mrernst/dqn_rocketlander/blob/main/imgs/success.gif" width="175">
+<img src="https://github.com/mrernst/dqn_rocketlander/blob/main/imgs/success.gif" width="320">
