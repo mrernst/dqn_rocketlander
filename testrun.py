@@ -6,6 +6,7 @@ from util.pid import PID_Benchmark
 
 import imageio
 import base64
+import IPython
 
 def embed_mp4(filename):
 	  """Embeds an mp4 file in the notebook."""

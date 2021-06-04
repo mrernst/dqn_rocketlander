@@ -13,6 +13,7 @@ PRINT_DEBUG_MSG = True
 
 import imageio
 import base64
+import IPython
 
 
 def embed_mp4(filename):
